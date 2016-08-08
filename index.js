@@ -22,6 +22,9 @@ app.get('/', index.get)
 app.get('/users', routes.getUsers)
 app.get('/users/:id', routes.getUser)
 app.delete('/users/:id', routes.delUser)
+app.put('/users/:id', routes.putUser)
+app.post('/users/:id', routes.postUser)
+app.get('/users?search=wombat', routes.filUser)
 // app.get('/widget', routes.getWidget)
 
 // app.get('/widgets/:id', function (req, res){
